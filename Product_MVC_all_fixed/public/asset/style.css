@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Battambang", system-ui;;
+}
+
+/* Main Container */
+.login-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Left Side */
+.left-side {
+    width: 52.5%;
+    background-color: #0732b1;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 70px;
+}
+
+.left-side h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.left-side h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.left-side p {
+    color: #f5f6f8;
+    font-size: 15px;
+}
+
+/* Right Side */
+.right-side {
+    width: 47.5%;
+    background-color: #f3f4f6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+/* Login Card */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+
+    background-color: white;
+    padding: 30px;
+
+    border: 1px solid #e0e3e8;
+    border-radius: 12px;
+}
+
+.login-card h2 {
+    color: #141213;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.login-card p {
+    color: #141416d2;
+    font-size: 14px;
+}
+
+/* Input */
+.form-label {
+    font-weight: bold;
+    font-size: 13px;
+    color: #0a0000;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+/* Login Button */
+.btn-login {
+    width: 100%;
+    padding: 11px;
+
+    background-color: #190598;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #09665d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .login-container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .left-side {
+        min-height: 300px;
+        padding: 40px;
+    }
+
+    .left-side h1 {
+        font-size: 30px;
+    }
+
+    .right-side {
+        min-height: 450px;
+    }
+}
